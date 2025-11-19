@@ -66,6 +66,19 @@ A dynamic equilibrium (dH/dt = 0) occurs when:
 At this point, cosmic acceleration halts and local matter creation becomes dominant.
 
 ---
+## Theoretical Feasibility (理論的検証)
+
+Is it physically possible for the Strong Force to resist the Big Rip until the very end?
+We performed an order-of-magnitude estimation to check if the energy scales match.
+
+We calculated the expansion velocity at the moment when the "Phantom Energy" force overcomes the QCD confinement force (Strong Force). Interestingly, the calculation shows that the rip occurs when the expansion speed is close to the **speed of light ($c$)**.
+
+This suggests that the immense energy used to tear apart the vacuum could be converted into matter creation (hadronization), effectively triggering a new Big Bang.
+
+Check the detailed calculation here:
+👉 **[Feasibility Check Notebook](feasibility_check.ipynb)**
+
+---
 
 ## 📊 Next Step
 
@@ -89,7 +102,8 @@ It visualizes how **H(t)** evolves over time given parameters α, β, ρ_vac, an
 ```
 StrongForceRebirth/
 ├── README.md
-└── strong_force_rebirth.ipynb
+├── strong_force_rebirth.ipynb
+└── feasibility_check.ipynb
 ```
 
 ---
