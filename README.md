@@ -1,114 +1,87 @@
-# 🌌 StrongForceRebirth
-### Hypothesis: The Universe Reborn by the Persistence of the Strong Force  
-坂森 聡 (Satoshi Sakamori)
+# StrongForceRebirth
 
----
+**A critical, exploratory hypothesis — not an established physical theory**
 
-## 🧩 Abstract
+Original idea: Satoshi Sakamori (坂森 聡)
 
-This hypothesis explores the idea that the **strong nuclear force** may resist disintegration even in the ultimate cosmic expansion phase known as the *Big Rip*.  
-If this resistance leads to particle creation when the universe's expansion energy exceeds the confinement energy, it could trigger a feedback process — effectively **resetting the universe** and initiating a new cosmological cycle.
+## Original intuition / 元の着想
 
----
+宇宙が極端な加速膨張（Big Rip）へ進むと、強い力で結びついた状態も破壊されるのではないか。QCDの結合が引き延ばされれば、ストリング・ブレーキングによって粒子・反粒子が生まれる。この粒子生成が宇宙膨張に反作用し、膨張を弱める可能性はないだろうか？
 
-## ⚙️ Toy Model (Conceptual)
+The key question is **not** whether string breaking exists (it does), but whether cosmological tidal disruption can produce a significant *energy transfer/backreaction* capable of changing the phantom-driven expansion.
 
-Let:
+## Current scientific assessment (2026-10-14)
 
-- ρ_vac — vacuum energy density driving expansion  
-- ρ_conf — confinement-related energy density of the strong force  
-- H — Hubble parameter  
+| Claim | Status |
+| --- | --- |
+| Phantom expansion can eventually disrupt bound structures, potentially including nucleons | Established within particular Big Rip models; the Big Rip itself is unconfirmed |
+| QCD flux tubes may break by quark–antiquark pair production | Supported by lattice QCD in applicable QCD systems |
+| Cosmological tidal disruption of hadrons triggers that same QCD process | **Not demonstrated here** |
+| Energy for that process is extracted from the phantom component | **No mechanism derived** |
+| The resulting particles halt a Big Rip or cause rebirth | **No demonstration** |
 
-We propose a simple feedback equation:
+Ordinary accelerated expansion (e.g. a cosmological constant) does **not** imply eventual destruction of nuclei. The relevant quantity for tidal relative acceleration is \(\ddot a/a=H^2+\dot H\), not \(H\) alone.
 
-```
-dH/dt = α * (ρ_vac - ρ_conf(t))
-ρ_conf(t) = ρ₀ * exp(β * H * t)
-```
+## Corrected equations and interpretation
 
-Particle creation occurs when:
+For a spatially flat FLRW universe and energy densities \(\rho\) in natural units \(c=1\):
 
-```
-ρ_vac ≈ ρ_conf
-```
+\[
+H^2=\frac{8\pi G}{3}(\rho_X+\rho_m),\qquad
+\dot H=-4\pi G[(1+w_X)\rho_X+\rho_m],
+\]
 
-causing a local reduction in H (expansion rate). This may balance the expansion and trigger an effective "reheating" phase — analogous to the early universe.
+where \(w_X<-1\) characterizes hypothetical phantom energy and pressureless matter has \(w_m=0\).
 
----
+A **phenomenological** energy-transfer term \(Q\) can be explored by:
 
-## 🪐 Cosmological Implication
+\[
+\dot\rho_X+3H(1+w_X)\rho_X=-Q,\qquad
+\dot\rho_m+3H\rho_m=Q.
+\]
 
-If this toy model holds, then at the final stage of cosmic acceleration:
+The opposite signs are necessary for total covariant stress-energy conservation in this homogeneous model. **Q is an assumption to be derived or constrained, not a consequence of QCD.** Positive Q means energy flows from X to matter. Q=0 is the baseline. Merely adding matter, without specifying the source and ensuring conservation, is not a physical solution.
 
-1. **Strong force confinement** still resists expansion.  
-2. **Expansion energy** converts into **particle creation**.  
-3. **Recreated matter and energy** slow expansion locally.  
-4. A **new equilibrium** forms, starting a new cycle — a "Rebirth" rather than a "Rip".
+Key distinctions:
+- \(\dot H=0\): expansion rate momentarily stationary;
+- \(\ddot a=0\): acceleration vanishes (\(H^2+\dot H=0\));
+- \(H=0\): expansion halts; a bounce/rebirth needs still more physics.
 
-This mechanism could provide a natural, cyclic cosmology driven purely by known interactions.
+For \(w_X=-1.1\), a mixture with matter has \(\dot H\le0\) if \(\rho_m\ge0.1\rho_X\), while \(\ddot a\le0\) needs \(\rho_m\ge2.3\rho_X\). These are instantaneous conditions, **not** proof the Big Rip is avoided.
 
----
+## Reassessment of the old 'near light speed' claim
 
-## 🧮 Mathematical Expression
+The previous estimate set \(F\sim mrH^2=\sigma\) with \(\sigma\sim1\,\mathrm{GeV/fm}\), \(r=1\,\mathrm{fm}\), and \(m=m_p/3\), producing \(Hr/c\approx1.79\). Algebraically,
 
-To express this feedback explicitly:
+\[
+\frac{Hr}{c}=\sqrt{\frac{\sigma r}{mc^2}}.
+\]
 
-```
-dH/dt = α * (ρ_vac - ρ₀ * e^(β * H * t))
-```
+This ratio being of order one follows from the chosen QCD energy scales; it does **not** demonstrate horizon formation between quarks, a causal cutoff, matter creation from phantom energy, or a cosmic bounce. Furthermore, an accurate tidal estimate uses \(H^2+\dot H\), and a confined relativistic quantum system cannot be adequately modeled with a constituent-quark Newtonian force balance. See `feasibility_check.ipynb` for a labeled dimensional illustration only.
 
-A dynamic equilibrium (dH/dt = 0) occurs when:
+## Reproducible exploratory notebooks
 
-```
-ρ_vac = ρ₀ * e^(β * H * t)
-```
+- [feasibility_check.ipynb](feasibility_check.ipynb): dimensional estimate, with explicit limitations; **not** a feasibility validation.
+- [strong_force_rebirth.ipynb](strong_force_rebirth.ipynb): conservation-respecting FLRW *phenomenological* comparison \(Q=0\) vs illustrative \(Q=3\xi H\rho_X\). This is **not a QCD prediction** and does not demonstrate cosmic rebirth.
 
-At this point, cosmic acceleration halts and local matter creation becomes dominant.
+## Falsifiable research questions
 
----
-## Theoretical Feasibility (理論的検証)
+1. Calculate QCD bound-state response to a specified time-dependent curved spacetime using an appropriate quantum-field treatment; does string breaking occur and at what rate?
+2. Derive the microscopic source of energy for any produced pairs. Is there a coupling that makes \(Q>0\) for the phantom component?
+3. Bound the homogeneous energy-transfer rate against phantom energy growth and dilution of existing hadrons.
+4. Evolve \(\rho_X,\rho_m,H,a\) consistently and test singularity avoidance; separately establish any reheating, bounce, or new hot dense phase.
+5. Check observational viability and stability of the proposed phantom/coupling sector.
 
-Is it physically possible for the Strong Force to resist the Big Rip until the very end?
-We performed an order-of-magnitude estimation to check if the energy scales match.
+## Sources
 
-We calculated the expansion velocity at the moment when the "Phantom Energy" force overcomes the QCD confinement force (Strong Force). Interestingly, the calculation shows that the rip occurs when the expansion speed is close to the **speed of light ($c$)**.
+- Caldwell, Kamionkowski & Weinberg (2003), *Phantom Energy: Dark Energy with w < −1 Causes a Cosmic Doomsday*: https://doi.org/10.1103/PhysRevLett.91.071301
+- DeTar et al. (1999), *String breaking in lattice quantum chromodynamics*: https://doi.org/10.1103/PhysRevD.59.031501
+- Bulava et al. (2019), *String breaking by light and strange quarks in QCD*: https://arxiv.org/abs/1902.04006
+- Curbelo et al. (2006), *Interacting Phantom Energy and Avoidance of the Big Rip Singularity*: https://arxiv.org/abs/astro-ph/0502141
+- Zago & Kosowsky (2019), *Quantum particle production effects on the cosmic expansion*: https://doi.org/10.1103/PhysRevD.100.045023
 
-This suggests that the immense energy used to tear apart the vacuum could be converted into matter creation (hadronization), effectively triggering a new Big Bang.
+These papers establish relevant *ingredients* or examples, not the full StrongForceRebirth hypothesis.
 
-Check the detailed calculation here:
-👉 **[Feasibility Check Notebook](feasibility_check.ipynb)**
+## Historical note
 
----
-
-## 📊 Next Step
-
-The included notebook `strong_force_rebirth.ipynb` simulates this toy model using basic numerical integration.  
-It visualizes how **H(t)** evolves over time given parameters α, β, ρ_vac, and ρ₀.
-
----
-
-## 🧠 Japanese Summary（日本語要約）
-
-この仮説は、**ビッグリップ**が起こる最終段階でも、強い力（クォークを閉じ込める力）が完全には崩壊せず、  
-逆に宇宙の膨張エネルギーを吸収して**新しい素粒子を生成する**可能性を考えたものです。
-
-その結果、宇宙の膨張が一時的に減速し、エネルギーが再び物質化する過程を経て、  
-実質的に「新しい宇宙の始まり」が生じる — という仮想モデルを提示します。
-
----
-
-## 📁 Repository Structure
-
-```
-StrongForceRebirth/
-├── README.md
-├── strong_force_rebirth.ipynb
-└── feasibility_check.ipynb
-```
-
----
-
-## ✍️ Author
-Satoshi Sakamori (坂森 聡)  
-Toyama, Japan  
-GitHub: [@satoshisakamori](https://github.com/satoshisakamori)
+Earlier versions asserted that an \(Hr\) close to \(c\) validated the conjecture and used \(\dot H=\alpha(\rho_{vac}-\rho_0e^{\beta Ht})\) as though it followed from the Einstein equations. Both claims have been withdrawn. The original intuition remains a question worthy of a properly specified model.
