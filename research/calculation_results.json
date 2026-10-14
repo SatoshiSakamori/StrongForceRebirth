@@ -1,0 +1,205 @@
+{
+  "python": "3.9.6",
+  "fluid": [
+    {
+      "w_receiver": 0.0,
+      "xi": 0.0,
+      "max_relative_error_h_001": 4.152564099404798e-07,
+      "max_relative_error_h_0005": 2.563094443238588e-08,
+      "max_relative_continuity_residual": 1.3310595300673863e-16,
+      "H_at_N20": 19.054813411405057,
+      "Hdot_at_N20": 54.4628871215193,
+      "acceleration_over_a_at_N20": 417.54880126498136,
+      "asymptotic_w_eff": -1.1,
+      "big_rip_in_this_ansatz": true,
+      "time_quadrature_step_halving_difference": 6.610800795670002e-11,
+      "finite_time_limit_H0_units": 7.010990632161359
+    },
+    {
+      "w_receiver": 0.0,
+      "xi": 0.05,
+      "max_relative_error_h_001": 2.285646322214347e-09,
+      "max_relative_error_h_0005": 1.410771283379232e-10,
+      "max_relative_continuity_residual": 8.466639627731033e-17,
+      "H_at_N20": 4.351757341137989,
+      "Hdot_at_N20": 1.4203343967111284,
+      "acceleration_over_a_at_N20": 20.358126352859507,
+      "asymptotic_w_eff": -1.05,
+      "big_rip_in_this_ansatz": true,
+      "time_quadrature_step_halving_difference": 3.8184566619747784e-11,
+      "finite_time_limit_H0_units": 13.721969126016813
+    },
+    {
+      "w_receiver": 0.0,
+      "xi": 0.1,
+      "max_relative_error_h_001": 2.719798836628688e-10,
+      "max_relative_error_h_0005": 1.67886758823052e-11,
+      "max_relative_continuity_residual": 7.008983741320431e-17,
+      "H_at_N20": 0.99498743710662,
+      "Hdot_at_N20": -0.0,
+      "acceleration_over_a_at_N20": 0.99,
+      "asymptotic_w_eff": -1.0,
+      "big_rip_in_this_ansatz": false
+    },
+    {
+      "w_receiver": 0.0,
+      "xi": 0.15,
+      "max_relative_error_h_001": 8.982794481677806e-10,
+      "max_relative_error_h_0005": 5.5444529808430304e-11,
+      "max_relative_continuity_residual": 1.0779095877133939e-16,
+      "H_at_N20": 0.2277792044576348,
+      "Hdot_at_N20": -0.0038912524487514735,
+      "acceleration_over_a_at_N20": 0.047992113534601526,
+      "asymptotic_w_eff": -0.9500000000000001,
+      "big_rip_in_this_ansatz": false
+    },
+    {
+      "w_receiver": 0.0,
+      "xi": 0.9,
+      "max_relative_error_h_001": 1.353921110253104e-07,
+      "max_relative_error_h_0005": 8.377770035446339e-09,
+      "max_relative_continuity_residual": 9.67187549644067e-16,
+      "H_at_N20": 8.39912353841165e-11,
+      "Hdot_at_N20": -8.465422769154823e-21,
+      "acceleration_over_a_at_N20": -1.4108951478047602e-21,
+      "asymptotic_w_eff": -0.20000000000000007,
+      "big_rip_in_this_ansatz": false
+    },
+    {
+      "w_receiver": 0.3333333333333333,
+      "xi": 0.0,
+      "max_relative_error_h_001": 1.7645438288097114e-06,
+      "max_relative_error_h_0005": 1.0845977946848439e-07,
+      "max_relative_continuity_residual": 1.3061141145007606e-16,
+      "H_at_N20": 19.054813411405057,
+      "Hdot_at_N20": 54.4628871215193,
+      "acceleration_over_a_at_N20": 417.54880126498136,
+      "asymptotic_w_eff": -1.1,
+      "big_rip_in_this_ansatz": true,
+      "time_quadrature_step_halving_difference": 1.4052936592179321e-10,
+      "finite_time_limit_H0_units": 7.014649422774854
+    },
+    {
+      "w_receiver": 0.3333333333333333,
+      "xi": 0.05,
+      "max_relative_error_h_001": 1.0089861394052926e-08,
+      "max_relative_error_h_0005": 6.202635359716658e-10,
+      "max_relative_continuity_residual": 7.116116399407113e-17,
+      "H_at_N20": 4.3278595364134,
+      "Hdot_at_N20": 1.404777612519331,
+      "acceleration_over_a_at_N20": 20.135145779443743,
+      "asymptotic_w_eff": -1.05,
+      "big_rip_in_this_ansatz": true,
+      "time_quadrature_step_halving_difference": 9.594103289600753e-11,
+      "finite_time_limit_H0_units": 13.798620366621352
+    },
+    {
+      "w_receiver": 0.3333333333333333,
+      "xi": 0.1,
+      "max_relative_error_h_001": 3.3554146966179103e-09,
+      "max_relative_error_h_0005": 2.0624444277362033e-10,
+      "max_relative_continuity_residual": 4.3031900179269624e-17,
+      "H_at_N20": 0.9836157786453001,
+      "Hdot_at_N20": -2.0816681711721685e-17,
+      "acceleration_over_a_at_N20": 0.9675000000000001,
+      "asymptotic_w_eff": -1.0,
+      "big_rip_in_this_ansatz": false
+    },
+    {
+      "w_receiver": 0.3333333333333333,
+      "xi": 0.15,
+      "max_relative_error_h_001": 4.2401022276746495e-10,
+      "max_relative_error_h_0005": 2.60669378654367e-11,
+      "max_relative_continuity_residual": 1.2389829447852058e-16,
+      "H_at_N20": 0.22370896828078995,
+      "Hdot_at_N20": -0.00375342768669416,
+      "acceleration_over_a_at_N20": 0.04629227480256133,
+      "asymptotic_w_eff": -0.9500000000000001,
+      "big_rip_in_this_ansatz": false
+    },
+    {
+      "w_receiver": 0.3333333333333333,
+      "xi": 0.9,
+      "max_relative_error_h_001": 1.35392111068759e-07,
+      "max_relative_error_h_0005": 8.377770035446339e-09,
+      "max_relative_continuity_residual": 1.055372838623204e-15,
+      "H_at_N20": 5.871214205877339e-11,
+      "Hdot_at_N20": -4.136538750155483e-21,
+      "acceleration_over_a_at_N20": -6.894231250258966e-22,
+      "asymptotic_w_eff": -0.20000000000000007,
+      "big_rip_in_this_ansatz": false
+    }
+  ],
+  "finite_pulse": {
+    "description": "xi=0.3 for 2<=N<=4; otherwise xi=0; dust",
+    "rho_X_at_N4": 0.4939304724846239,
+    "rho_m_at_N4": 0.1837001955348375,
+    "rho_X_at_N20": 60.017697936832626,
+    "rho_m_at_N20": 2.618029206687371e-22,
+    "big_rip_returns": true
+  },
+  "free_scalar_modes": [
+    {
+      "tau": 0.5,
+      "numerical_beta2": 0.004314807632693191,
+      "analytic_beta2": 0.004314807632693934,
+      "relative_error": 1.7227396276574379e-13,
+      "step_halving_difference": 1.9153949259997916e-14,
+      "endpoint_extension_difference": 1.3340023530261647e-15,
+      "normalization_error": 1.1213252548714081e-14,
+      "no_direct_X_coupling": true
+    },
+    {
+      "tau": 1.0,
+      "numerical_beta2": 9.791576576490637e-05,
+      "analytic_beta2": 9.791576576478956e-05,
+      "relative_error": 1.192956319605903e-12,
+      "step_halving_difference": 6.894170564292201e-17,
+      "endpoint_extension_difference": 1.228672111969198e-16,
+      "normalization_error": 2.5868196473766147e-14,
+      "no_direct_X_coupling": true
+    },
+    {
+      "tau": 2.0,
+      "numerical_beta2": 1.8186368630375836e-08,
+      "analytic_beta2": 1.8186368631461814e-08,
+      "relative_error": 5.971389772461561e-11,
+      "step_halving_difference": 2.0186482581519585e-18,
+      "endpoint_extension_difference": 8.996945737718763e-19,
+      "normalization_error": 2.9976021664879227e-14,
+      "no_direct_X_coupling": true
+    }
+  ],
+  "massless_conformal_beta2": 0.0,
+  "scales": {
+    "H0_assumed_km_s_Mpc": 70,
+    "Lambda_QCD_assumed_GeV": 0.2,
+    "H0_over_QCD": 7.465918872951584e-42,
+    "H_QCD_in_s_inverse": 3.0385348959922554e+23,
+    "rho_background_GeV4_at_H_QCD": 7.11507e+35,
+    "Lambda4_over_background": 2.2487480797799605e-39,
+    "free_field_H4_over_background": 2.2487480797799605e-39,
+    "phantom_dominated_remaining_seconds_delta_01": 2.194039856333333e-23
+  },
+  "gauge_kinetic_sign_controls": [
+    {
+      "field": "electric",
+      "H": 0.2,
+      "dlnB_dt": 0.3,
+      "rho": 0.16643554184903978,
+      "Q_ward": -0.04993066255471193,
+      "Q_from_continuity": -0.04993066255825432,
+      "interpretation": "classical work, not irreversible particle production"
+    },
+    {
+      "field": "magnetic",
+      "H": 0.2,
+      "dlnB_dt": 0.3,
+      "rho": 0.3032653298563167,
+      "Q_ward": 0.09097959895689502,
+      "Q_from_continuity": 0.09097959895526284,
+      "interpretation": "classical work, not irreversible particle production"
+    }
+  ],
+  "scope": "Controls only: no QCD rate, renormalized stress tensor, or viable phantom EFT derived."
+}

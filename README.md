@@ -17,10 +17,19 @@ The key question is **not** whether string breaking exists (it does), but whethe
 | Phantom expansion can eventually disrupt bound structures, potentially including nucleons | Established within particular Big Rip models; the Big Rip itself is unconfirmed |
 | QCD flux tubes may break by quark–antiquark pair production | Supported by lattice QCD in applicable QCD systems |
 | Cosmological tidal disruption of hadrons triggers that same QCD process | **Not demonstrated here** |
-| Energy for that process is extracted from the phantom component | **No mechanism derived** |
+| That process directly drains the phantom component with only metric-mediated coupling in Einstein/semiclassical gravity | **No direct transfer term in this setting**; each complete sector is separately covariantly conserved |
+| An added phantom–QCD coupling provides positive, sufficient, stable energy transfer | **Not demonstrated**; an explicit candidate and falsification conditions are specified in the research note |
 | The resulting particles halt a Big Rip or cause rebirth | **No demonstration** |
 
 Ordinary accelerated expansion (e.g. a cosmological constant) does **not** imply eventual destruction of nuclei. The relevant quantity for tidal relative acceleration is \(\ddot a/a=H^2+\dot H\), not \(H\) alone.
+
+### Priority investigation: direct phantom-to-QCD energy transfer
+
+[日本語の研究ノート・導出・反証条件](research/phantom_qcd_energy_transfer.md) distinguishes a definite result under stated assumptions from open dynamical questions. With separate actions \(S_X[g,\phi]+S_{QCD}[g,A,q]\), both full stress tensors obey their own conservation equations. Particle creation and gravitational backreaction do not by themselves insert a sink into the phantom continuity equation. This is a statement about classical/semiclassical Einstein gravity with no cross-sector operators, not a prohibition of every quantum-gravitational effect or indirect backreaction.
+
+The note proposes an **additional, hypothetical** gauge-kinetic coupling \(-B(\phi)F^2/4\), for which the specified sector split yields \(Q=\dot B\langle F^2\rangle_{ren}/4\). Its sign, irreversible particle yield, magnitude, stability and observational viability still require a microscopic calculation; a wrong-sign scalar is not a healthy completion.
+
+[Executable controls](research/verify_energy_transfer.py) and [recorded results](research/calculation_results.json) cover dust/radiation FLRW solutions, finite-duration transfer, free-field particle production, and the coupling's classical sign. Run `python3 research/verify_energy_transfer.py` from the repository root (standard library only). Analytic comparisons and convergence checks pass. **These controls are not real-time QCD or a self-consistent semiclassical backreaction solution.** The original intuition remains preserved above as a research question.
 
 ## Corrected equations and interpretation
 
